@@ -1,0 +1,40 @@
+body {
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $header_bg;
+    box-sizing: border-box;
+    height: 116px;
+    width: 100%;
+
+    &__logo {
+        padding: 3%;
+        width: 10px;
+        height: auto;
+    }
+
+    &__nav-list {
+        display: flex;
+        justify-content: space-between;
+        width: 250px;
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        @media screen and (max-width: 376px) {
+            display: none;
+        }
+    }
+
+    &__button {
+        padding: 1%;
+
+    }
+
+
+}

@@ -50,4 +50,39 @@ q:before, q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+body {
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FAFAFA;
+  box-sizing: border-box;
+  height: 116px;
+  width: 100%;
+}
+.header__logo {
+  padding: 3%;
+  width: 10px;
+  height: auto;
+}
+.header__nav-list {
+  display: flex;
+  justify-content: space-between;
+  width: 250px;
+}
+.header__nav-list:hover {
+  cursor: pointer;
+}
+@media screen and (max-width: 376px) {
+  .header__nav-list {
+    display: none;
+  }
+}
+.header__button {
+  padding: 1%;
 }/*# sourceMappingURL=global.css.map */
