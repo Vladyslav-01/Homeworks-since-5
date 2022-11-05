@@ -1,7 +1,7 @@
-@import url(utils/_reset.scss);
-@import url(utils/_rules.scss);
-@import url(utils/_mixins.scss);
-@import url(utils/_var.scss);
+@import 'utils/_reset.scss';
+@import 'utils/_rules.scss';
+@import 'utils/_mixins.scss';
+@import 'utils/_var.scss';
 
 @import 'components/header';
-@import url(/components/_main.scss);
+@import 'components/main';
