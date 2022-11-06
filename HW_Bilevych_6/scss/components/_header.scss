@@ -15,25 +15,68 @@ body {
         padding: 3%;
         width: 10px;
         height: auto;
+
+        &:hover {
+            cursor: pointer;
+        }
     }
 
     &__nav-list {
         display: flex;
         justify-content: space-between;
-        width: 250px;
+        width: 300px;
+        padding: 0px 40px;
+
+        @include header_list_font;
 
         &:hover {
             cursor: pointer;
         }
 
-        @media screen and (max-width: 376px) {
+        @media screen and (max-width: 590px) {
             display: none;
+        }
+
+        // :nth-child(2) {}
+
+
+        &--item {
+            gap: 30px;
         }
     }
 
     &__button {
-        padding: 1%;
+        margin: 1.5%;
+        width: 140px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+        background-color: $header_bg;
+        color: $orange;
+        font-weight: 400;
 
+        &:hover {
+            cursor: pointer;
+            background-color: $white_btn_bg;
+            transition: 0.6s;
+        }
+
+        @include btn;
+
+        @media screen and (max-width: 1024px) {
+            width: 120px;
+            height: 35px;
+            font-weight: 100;
+        }
+
+        @media screen and (max-width: 375px) {
+            width: 70px;
+            height: 45px;
+            font-weight: 100;
+            border: 0.5px solid $orange;
+        }
     }
 
 

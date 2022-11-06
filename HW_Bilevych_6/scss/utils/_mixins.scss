@@ -1,1 +1,15 @@
-@mixin btn {}
+@mixin btn {
+    font-family: $font;
+    // font-weight: 100;
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: uppercase;
+
+    border: 1px solid $orange;
+    border-radius: 5px;
+}
+
+@mixin header_list_font {
+    font-family: $font;
+
+}
