@@ -11,12 +11,16 @@
     &__text {
         box-sizing: border-box;
         padding: 8%;
+
+        @media screen and (max-width: 790px) {
+            box-sizing: border-box;
+            padding: 4%;
+        }
     }
 }
 
 .main-section {
     width: 50%;
-    // height: auto;
     background-color: $main_bg;
     flex-direction: column;
     display: flex;
@@ -34,8 +38,8 @@
         @include btn;
         margin-top: 20px;
 
-        @media screen and (max-width: 375px) {
-            margin-top:  10px;
+        @media screen and (max-width: 790px) {
+            margin-top: 0px;
         }
     }
 
@@ -44,10 +48,10 @@
         color: $white;
     }
 
-    
-    @media screen and (max-width: 375px) {
-        flex-direction: column;
+    @media screen and (max-width: 570px) {
+        display: block;
         width: 100%;
+        // min-height: 350px;
         height: auto;
     }
 }
@@ -55,12 +59,27 @@
 h2 {
     font-family: $font;
     font-weight: 800;
-    font-size: 47px;
+    font-size: 56px;
     line-height: 69px;
 
+    @media screen and (max-width: 1110px) {
+        font-size: 50px;
+    }
+
+    @media screen and (max-width: 1024px) {
+        font-size: 38px;
+        line-height: 53px;
+    }
+
+    @media screen and (max-width: 790px) {
+        font-size: 200%;
+        line-height: normal;
+    }
+
     @media screen and (max-width: 375px) {
-        font-size: 30px;
-        line-height: 45px;
+        font-weight: 400;
+        font-size: 27px;
+        line-height: 35px;
     }
 }
 
@@ -74,5 +93,10 @@ section p {
     font-family: $font;
     font-size: 20px;
     line-height: 140.62%;
-}
 
+    @media screen and (max-width: 1024px) {
+        font-size: 16px;
+        line-height: 115%;
+        margin: 15px 0;
+    }
+}
