@@ -117,6 +117,9 @@ body {
   background-color: #ececec;
   transition: 0.6s;
 }
+.header__button:hover {
+  cursor: pointer;
+}
 @media screen and (max-width: 1024px) {
   .header__button {
     width: auto;
@@ -180,6 +183,9 @@ body {
   box-sizing: border-box;
   color: #F7941E;
   margin-top: 20px;
+}
+.main-section__btn:hover {
+  cursor: pointer;
 }
 @media screen and (max-width: 1024px) {
   .main-section__btn {
@@ -261,4 +267,54 @@ section p {
     line-height: 115%;
     margin: 15px 0;
   }
+}
+
+.get-started {
+  width: 100%;
+  background-color: #F7941E;
+  display: grid;
+}
+.get-started__btn {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  width: 140px;
+  height: 40px;
+  border: 1px solid #F7941E;
+  border-radius: 5px;
+  box-sizing: border-box;
+  color: #F7941E;
+}
+.get-started__btn:hover {
+  cursor: pointer;
+}
+@media screen and (max-width: 1024px) {
+  .get-started__btn {
+    width: auto;
+    height: 35px;
+    font-weight: 100;
+  }
+}
+@media screen and (max-width: 375px) {
+  .get-started__btn {
+    width: auto;
+    height: auto;
+    font-weight: 100;
+    border: 0.5px solid #F7941E;
+  }
+}
+.get-started__black-btn {
+  background-color: #000000;
+  color: #FFFFFF;
+  font-weight: 100;
+}
+.get-started__orange-btn {
+  background-color: #F7941E;
+  border-color: #000000;
+  color: #000000;
+}
+
+.blog {
+  display: grid;
 }/*# sourceMappingURL=global.css.map */
