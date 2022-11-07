@@ -100,3 +100,38 @@ section p {
         margin: 15px 0;
     }
 }
+
+.get-started {
+    width: 100%;
+    background-color: $orange;
+    display: grid;
+
+    &:first-child {
+
+    }
+
+    &:nth-child(2) {
+
+    }
+
+    &__btn {
+        @include btn;
+    }
+
+    &__black-btn {
+        background-color: $black;
+        color: $white;
+        font-weight: 100;
+    }
+
+    &__orange-btn {
+        background-color: $orange;
+        border-color: $black;
+        color: $black;
+    }
+}
+
+.blog {
+    display: grid;
+    
+}
