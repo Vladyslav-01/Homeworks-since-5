@@ -171,4 +171,16 @@ h2 {
   font-weight: 800;
   font-size: 47px;
   line-height: 69px;
+}
+
+h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 32px;
+  line-height: 140.62%;
+}
+
+section p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  line-height: 140.62%;
 }/*# sourceMappingURL=global.css.map */
