@@ -273,6 +273,11 @@ section p {
   width: 100%;
   background-color: #F7941E;
   display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+}
+.get-started:first-child {
+  grid-area: 2/2/2/span 2;
 }
 .get-started__btn {
   font-family: "Montserrat", sans-serif;
