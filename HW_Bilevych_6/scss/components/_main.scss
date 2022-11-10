@@ -192,6 +192,11 @@ section p {
     grid-template-rows: (1.2fr 1.2fr 3.6fr 3fr 1fr);
     grid-gap: 3%;
 
+    @media screen and (max-width: 860px) {
+        grid-template-rows: (0.3fr 0.1fr 1.4fr 0.8fr 0.8fr 0.3fr);
+        grid-gap: 1%;
+}
+
     &__h3 {
         grid-area: 1 / 2 / 1 / span 2;
         align-self: end;
@@ -217,11 +222,11 @@ section p {
             padding: 5% 0%;
         }
 
-        // &--img {
-        //     @media screen and (max-width: 630px) {
-        //         width: 90%;
-        //     }
-        // }
+        &--img {
+            @media screen and (max-width: 630px) {
+                width: 85%;
+            }
+        }
 
         &--business-card {
 
@@ -273,9 +278,17 @@ section p {
 
         display: flex;
         flex-direction: column;
+        justify-content: space-around;
         padding: 6%;
 
+        @media screen and (max-width: 860px) {
+            min-height: 400px;
+         }
 
+        @media screen and (max-width: 860px) {
+            box-shadow: 10px 5px 10px $light_shadow;     
+        }   
+        
         h3 {
             font-size: 1.5rem;
             font-weight: 800;
@@ -289,7 +302,7 @@ section p {
             text-decoration: none;
             color: $black;
             font-family: $font;
-            padding-top: 3%;
+            padding-top: 7%;
         }
 
         &:hover {
@@ -299,9 +312,18 @@ section p {
 
     &__info-1 {
         grid-area: 4 / 2 / 4 / 2;
+
+        @media screen and (max-width: 860px) {
+                grid-column-end: span 2;
+        }
     }
 
     &__info-2 {
         grid-area: 4 / 3 / 4 / 3;
+
+        @media screen and (max-width: 860px) {
+            // grid-area: 5 / 2 / 5 / span 2;
+            grid-area: 5 / 2 / 5 / span 2;
+        }
     }
 }
